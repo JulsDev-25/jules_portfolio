@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+ol,ul,menu {  list-style: none;}
+
+img,video {  max-width: 100%;  height: auto;}
