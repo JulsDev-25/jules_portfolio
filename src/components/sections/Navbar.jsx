@@ -36,7 +36,7 @@ function Navbar() {
           <X onClick={()=> setMenuVisible(false)} className='md:hidden absolute left-6 top-6 cursor-pointer hover:scale-110'/>
           <li className='md:hidden text-white text-2xl font-bold size-30'></li>
           {navLinks.map((link, index) => (
-            <li key={index}><a className={`bg-clip-text hover:text-transparent bg-linear-to-r from-indigo-500 to-purple-500 ${activeSection === link.href.slice(1) ? 'text-transparent' : 'text-auto'}`} href={link.href}>{link.name} </a></li>
+            <li key={index}><a className={`bg-clip-text hover:text-cyan-200 bg-linear-to-r from-indigo-500 to-purple-500 ${activeSection === link.href.slice(1) ? 'text-transparent' : 'text-auto'}`} href={link.href}>{link.name} </a></li>
           ))}
 
           <div className='md:hidden absolute bottom-10 w-full flex justify-center items-center'>
@@ -46,10 +46,10 @@ function Navbar() {
           </div>
         </ul>
         <button 
-          className='border-1 hidden md:block hover:bg-linear-to-r from-indigo-500 to-purple-500 px-4 py-2 hover:text-white transition'
+          className='border-1 hidden md:block hover:bg-linear-to-r from-indigo-500 to-purple-500 px-4 py-2 transition'
           style={{borderImage: 'linear-gradient(to right, #3b82f6, #8b5cf6) 1'}}
         >
-          Restons connectés
+          Me contacter
         </button>
         <Menu onClick={()=> setMenuVisible(true)} className='md:hidden size-7'/>
 
